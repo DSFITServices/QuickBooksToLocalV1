@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e07807588ae647c585e2aa10ceb08d42" Name="Diagram1">
+        <EntityTypeShape EntityType="quickbooksModel.account" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.billexpenseitem" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.billlineitem" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.billlinkedtransaction" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.billpaymentcheck" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.billpaymentchecksappliedto" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.billpaymentcreditcard" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.billpaymentcreditcardsappliedto" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.bill" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.buildassembly" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.buildassemblylineitem" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.checkexpenseitem" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.checklineitem" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.check" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.class" Width="1.5" PointX="6.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.companyinfo" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditcardchargeexpenseitem" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditcardchargelineitem" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditcardcharge" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditcardcreditexpenseitem" Width="1.5" PointX="14.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditcardcreditlineitem" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditcardcredit" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditmemolineitem" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditmemolinkedtransaction" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.creditmemo" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.currency" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.customcolumn" Width="1.5" PointX="16.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.customermessage" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.customernote" Width="1.5" PointX="16.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.customer" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.customershippingaddress" Width="1.5" PointX="14.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.customertype" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.datedriventerm" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.depositlineitem" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.deposit" Width="1.5" PointX="18.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.employeeearning" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.employee" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.estimatelineitem" Width="1.5" PointX="20.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.estimatelinkedtransaction" Width="1.5" PointX="16.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.estimate" Width="1.5" PointX="0.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.host" Width="1.5" PointX="2.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.inventoryadjustmentlineitem" Width="1.5" PointX="18.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.inventoryadjustment" Width="1.5" PointX="20.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.invoicelineitem" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.invoicelinkedtransaction" Width="1.5" PointX="22.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.invoice" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.itemlineitem" Width="1.5" PointX="4.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.itemreceiptexpenseitem" Width="1.5" PointX="6.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.itemreceiptlineitem" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.itemreceiptlinkedtransaction" Width="1.5" PointX="24.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.itemreceipt" Width="1.5" PointX="24.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.item" Width="1.5" PointX="14.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.itemsite" Width="1.5" PointX="24.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.journalentry" Width="1.5" PointX="24.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.journalentryline" Width="1.5" PointX="16.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.othername" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.paymentmethod" Width="1.5" PointX="2.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.payrollwageitem" Width="1.5" PointX="26.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.pricelevelperitem" Width="1.5" PointX="26.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.pricelevel" Width="1.5" PointX="26.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.purchaseorderlineitem" Width="1.5" PointX="18.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.purchaseorderlinkedtransaction" Width="1.5" PointX="26.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.purchaseorder" Width="1.5" PointX="26.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.receivepayment" Width="1.5" PointX="28.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.receivepaymentsappliedto" Width="1.5" PointX="4.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.salesorderlineitem" Width="1.5" PointX="28.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.salesorderlinkedtransaction" Width="1.5" PointX="6.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.salesorder" Width="1.5" PointX="28.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.salesreceiptlineitem" Width="1.5" PointX="20.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.salesreceipt" Width="1.5" PointX="22.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.salesrep" Width="1.5" PointX="28.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.salestaxcode" Width="1.5" PointX="30.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.salestaxitem" Width="1.5" PointX="30.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.shippingmethod" Width="1.5" PointX="8.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.standardterm" Width="1.5" PointX="30.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.statementchargelinkedtransaction" Width="1.5" PointX="30.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.statementcharge" Width="1.5" PointX="30.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.template" Width="1.5" PointX="30.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.timetracking" Width="1.5" PointX="30.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.todo" Width="1.5" PointX="32.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.transaction" Width="1.5" PointX="32.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.transfer" Width="1.5" PointX="32.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.unitofmeasure" Width="1.5" PointX="32.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.unitofmeasuredefaultunit" Width="1.5" PointX="32.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.unitofmeasurerelatedunit" Width="1.5" PointX="32.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.vehiclemileage" Width="1.5" PointX="32.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.vendorcreditexpenseitem" Width="1.5" PointX="32.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.vendorcreditlineitem" Width="1.5" PointX="2.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.vendorcreditlinkedtransaction" Width="1.5" PointX="4.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.vendorcredit" Width="1.5" PointX="6.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.vendor" Width="1.5" PointX="8.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quickbooksModel.vendortype" Width="1.5" PointX="16.75" PointY="33.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

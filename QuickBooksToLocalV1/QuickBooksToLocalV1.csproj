@@ -51,6 +51,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -83,6 +85,297 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\account.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\bill.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\billexpenseitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\billlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\billlinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\billpaymentcheck.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\billpaymentchecksappliedto.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\billpaymentcreditcard.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\billpaymentcreditcardsappliedto.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\buildassembly.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\buildassemblylineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\check.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\checkexpenseitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\checklineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\class.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\companyinfo.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditcardcharge.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditcardchargeexpenseitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditcardchargelineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditcardcredit.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditcardcreditexpenseitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditcardcreditlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditmemo.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditmemolineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\creditmemolinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\currency.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\customcolumn.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\customer.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\customermessage.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\customernote.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\customershippingaddress.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\customertype.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\datedriventerm.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\deposit.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\depositlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\employee.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\employeeearning.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\estimate.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\estimatelineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\estimatelinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\host.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\inventoryadjustment.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\inventoryadjustmentlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\invoice.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\invoicelineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\invoicelinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\item.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\itemlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\itemreceipt.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\itemreceiptexpenseitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\itemreceiptlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\itemreceiptlinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\itemsite.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\journalentry.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\journalentryline.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\othername.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\paymentmethod.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\payrollwageitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\pricelevel.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\pricelevelperitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\purchaseorder.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\purchaseorderlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\purchaseorderlinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuickBooksModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuickBooksModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuickBooksModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuickBooksModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuickBooksModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\receivepayment.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\receivepaymentsappliedto.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\salesorder.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\salesorderlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\salesorderlinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\salesreceipt.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\salesreceiptlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\salesrep.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\salestaxcode.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\salestaxitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\shippingmethod.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\standardterm.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\statementcharge.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\statementchargelinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\template.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\timetracking.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\todo.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\transaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\transfer.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\unitofmeasure.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\unitofmeasuredefaultunit.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\unitofmeasurerelatedunit.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vehiclemileage.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vendor.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vendorcredit.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vendorcreditexpenseitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vendorcreditlineitem.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vendorcreditlinkedtransaction.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vendortype.cs">
+      <DependentUpon>QuickBooksModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -100,6 +393,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="Model\QuickBooksModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuickBooksModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\QuickBooksModel.edmx.diagram">
+      <DependentUpon>QuickBooksModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,7 +414,6 @@
     <Folder Include="EbayDal\Common\" />
     <Folder Include="Interfaces\" />
     <Folder Include="IzettleDal\Common\" />
-    <Folder Include="Model\" />
     <Folder Include="PrestaShopDal\Common\" />
     <Folder Include="QuickBooksDal\Common\" />
   </ItemGroup>
@@ -128,6 +427,21 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\QuickBooksModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuickBooksModel.edmx</DependentUpon>
+      <LastGenOutput>QuickBooksModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\QuickBooksModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuickBooksModel.edmx</DependentUpon>
+      <LastGenOutput>QuickBooksModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
