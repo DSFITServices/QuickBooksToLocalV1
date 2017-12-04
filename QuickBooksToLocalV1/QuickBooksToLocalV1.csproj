@@ -93,5 +93,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AmazonDal\Common\" />
+    <Folder Include="EbayDal\Common\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="IzettleDal\Common\" />
+    <Folder Include="Model\" />
+    <Folder Include="PrestaShopDal\Common\" />
+    <Folder Include="QuickBooksDal\Common\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
