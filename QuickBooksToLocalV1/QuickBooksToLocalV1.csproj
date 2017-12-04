@@ -71,6 +71,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="QuickBooksDal\Common\QBCommon.cs" />
+    <Compile Include="QuickBooksDal\QBConnection.cs" />
+    <Compile Include="QuickBooksDal\QBCurd.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -80,7 +83,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Interfaces\IConnection.cs" />
-    <Compile Include="Interfaces\IdbCurd.cs" />
+    <Compile Include="Interfaces\IDbCurd.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -416,7 +419,6 @@
     <Folder Include="EbayDal\Common\" />
     <Folder Include="IzettleDal\Common\" />
     <Folder Include="PrestaShopDal\Common\" />
-    <Folder Include="QuickBooksDal\Common\" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="QBFC13Lib">

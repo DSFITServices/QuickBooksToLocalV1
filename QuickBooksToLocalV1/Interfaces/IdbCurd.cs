@@ -24,7 +24,7 @@ namespace QuickBooksToLocalV1.Interfaces
         /// </summary>
         /// <param name="obj">Data to de Updated</param>
         /// <returns>Data</returns>
-        T DbUpdate(T obj);
+        //T DbUpdate(T obj);
 
         /// <summary>
         /// Reads All or some of the Data
@@ -32,7 +32,7 @@ namespace QuickBooksToLocalV1.Interfaces
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        //ObservableCollection<T> DbRead(T obj);
+        ObservableCollection<T> DbRead();
 
         /// <summary>
         /// Delete data From Dataservice
