@@ -79,6 +79,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Interfaces\IConnection.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -412,7 +413,6 @@
   <ItemGroup>
     <Folder Include="AmazonDal\Common\" />
     <Folder Include="EbayDal\Common\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="IzettleDal\Common\" />
     <Folder Include="PrestaShopDal\Common\" />
     <Folder Include="QuickBooksDal\Common\" />
