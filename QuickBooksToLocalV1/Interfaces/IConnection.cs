@@ -13,7 +13,7 @@ namespace QuickBooksToLocalV1.Interfaces
         /// IE   Database Web Ect
         /// </summary>
         /// <returns>session</returns>
-        T DbConnect();
+        T DbConnect(T obj);
 
         /// <summary>
         /// Closes Data Service

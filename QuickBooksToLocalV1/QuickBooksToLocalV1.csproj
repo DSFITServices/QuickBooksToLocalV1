@@ -73,7 +73,7 @@
     </ApplicationDefinition>
     <Compile Include="QuickBooksDal\Common\QBCommon.cs" />
     <Compile Include="QuickBooksDal\QBConnection.cs" />
-    <Compile Include="QuickBooksDal\QBCurd.cs" />
+    <Compile Include="QuickBooksDal\QBCustomer.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

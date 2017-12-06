@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using QuickBooksToLocalV1.Model;
+using QuickBooksToLocalV1.QuickBooksDal;
 
 namespace QuickBooksToLocalV1
 {
@@ -23,6 +26,15 @@ namespace QuickBooksToLocalV1
         public MainWindow()
         {
             InitializeComponent();
+
+            QBCustomer qbc = new QBCustomer();
+            quickbooksEntities qbe = new quickbooksEntities();
+
+            ObservableCollection<customer> Customers = qbc.DbRead();
+
+            qbe.customers.AddRange(Customers);
+            qbe.SaveChanges();
+
         }
     }
 }

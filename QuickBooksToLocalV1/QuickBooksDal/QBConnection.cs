@@ -13,15 +13,20 @@ namespace QuickBooksToLocalV1.QuickBooksDal
 {
     public class QBConnection : IConnection<QBSessionManager>
     {
-        bool sessionBegun = false;
-        bool connectionOpen = false;
+        public bool sessionBegun = false;
+        public bool connectionOpen = false;
 
 
 
-        public QBSessionManager DbConnect()
+        public QBSessionManager DbConnect(QBSessionManager sessionManager)
         {
 
-            return new QBSessionManager();
+            sessionManager.OpenConnection(@"", "QuickBooksToLocalV1");
+            connectionOpen = true;
+            sessionManager.BeginSession(@"", ENOpenMode.omDontCare);
+            sessionBegun = true;
+
+            return sessionManager;
         }
 
         public bool DbClose(QBSessionManager sessionManager)
