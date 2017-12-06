@@ -76,13 +76,7 @@ namespace QuickBooksToLocalV1.QuickBooksDal
                     customerQueryReq.metaData.SetValue(ENmetaData.mdNoMetaData);
                     break;
             }
-
-            // Check to see if IDList is not null
-            // loop through list adding them to query
-
-            //customerQueryReq.ORCustomerListQuery.ListIDList.Add("");
-
-
+                        
             switch (ActiveState)
             {
                 case 1:
@@ -95,6 +89,21 @@ namespace QuickBooksToLocalV1.QuickBooksDal
                     customerQueryReq.ORCustomerListQuery.CustomerListFilter.ActiveStatus.SetValue(ENActiveStatus.asActiveOnly);
                     break;
             }
+
+
+            // Check to see if IDList is not null
+            // loop through list adding them to query
+            if(IDlist.Count > 0)
+            {
+                for(int i = 0; i< IDlist.Count; i++)
+                {
+                    customerQueryReq.ORCustomerListQuery.ListIDList.Add(IDlist[i]);
+                }
+            }
+
+           
+
+
 
             return customerQueryReq;
         }
