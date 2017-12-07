@@ -15,7 +15,7 @@ namespace QuickBooksToLocalV1.QuickBooksDal
     {
 
         private List<string> IDlist;
-
+        private List<string> FullNameList;
         private int ActiveState;
         private DateTime CreateStartDT;
         private DateTime CreateEndDT;
@@ -35,7 +35,8 @@ namespace QuickBooksToLocalV1.QuickBooksDal
 
             // Setup requestquery
             ICustomerQuery customerQueryReq = requestMsgSet.AppendCustomerQueryRq();
-            customerQueryReq = SetCustomerQuery(ref requestMsgSet, 0, ref customerQueryReq);
+            customerQueryReq = SetIncludedRetEliments(ref customerQueryReq);
+            customerQueryReq = SetCustomerQuery(0, ref customerQueryReq);
 
 
 
@@ -57,8 +58,66 @@ namespace QuickBooksToLocalV1.QuickBooksDal
             return Customers;
         }
 
+        ICustomerQuery SetIncludedRetEliments( ref ICustomerQuery customerQueryReq)
+        {
+            customerQueryReq.IncludeRetElementList.Add("ListID");
+            customerQueryReq.IncludeRetElementList.Add("TimeCreated");
+            customerQueryReq.IncludeRetElementList.Add("TimeModified");
+            customerQueryReq.IncludeRetElementList.Add("EditSequence");
+            customerQueryReq.IncludeRetElementList.Add("Name");
+            customerQueryReq.IncludeRetElementList.Add("FullName");
+            customerQueryReq.IncludeRetElementList.Add("IsActive");
+            customerQueryReq.IncludeRetElementList.Add("ClassRef");
+            customerQueryReq.IncludeRetElementList.Add("ParentRef");
+            customerQueryReq.IncludeRetElementList.Add("SubLevel");
+            customerQueryReq.IncludeRetElementList.Add("CompanyName");
+            customerQueryReq.IncludeRetElementList.Add("Salutation");
+            customerQueryReq.IncludeRetElementList.Add("FirstName");
+            customerQueryReq.IncludeRetElementList.Add("MiddleName");
+            customerQueryReq.IncludeRetElementList.Add("LastName");
+            customerQueryReq.IncludeRetElementList.Add("JobTitle");
+            customerQueryReq.IncludeRetElementList.Add("BillAddress");
+            customerQueryReq.IncludeRetElementList.Add("ShipAddress");
+            customerQueryReq.IncludeRetElementList.Add("Phone");
+            customerQueryReq.IncludeRetElementList.Add("AltPhone");
+            customerQueryReq.IncludeRetElementList.Add("Fax");
+            customerQueryReq.IncludeRetElementList.Add("Email");
+            customerQueryReq.IncludeRetElementList.Add("Cc");
+            customerQueryReq.IncludeRetElementList.Add("Contact");
+            customerQueryReq.IncludeRetElementList.Add("AltContact");
+            customerQueryReq.IncludeRetElementList.Add("AditionalContactRefList");
+            customerQueryReq.IncludeRetElementList.Add("ContactRetList");
+            customerQueryReq.IncludeRetElementList.Add("CustomerTypeRef");
+            customerQueryReq.IncludeRetElementList.Add("TermsRef");
+            customerQueryReq.IncludeRetElementList.Add("SaleRepRef");
+            customerQueryReq.IncludeRetElementList.Add("Balance");
+            customerQueryReq.IncludeRetElementList.Add("TotalBalance");
+            customerQueryReq.IncludeRetElementList.Add("SalesTaxCodeRef");
+            customerQueryReq.IncludeRetElementList.Add("ItemSalesTaxRef");
+            customerQueryReq.IncludeRetElementList.Add("ResaleNumber");
+            customerQueryReq.IncludeRetElementList.Add("AccountNumber");
+            customerQueryReq.IncludeRetElementList.Add("CreditLimit");
+            customerQueryReq.IncludeRetElementList.Add("PreferredPaymentMethodRef");
+            customerQueryReq.IncludeRetElementList.Add("CreditCardInfo");
+            customerQueryReq.IncludeRetElementList.Add("JobStatus");
+            customerQueryReq.IncludeRetElementList.Add("JobStartDate");
+            customerQueryReq.IncludeRetElementList.Add("JobProjectedEndDate");
+            customerQueryReq.IncludeRetElementList.Add("JobEndDate");
+            customerQueryReq.IncludeRetElementList.Add("JobDesc");
+            customerQueryReq.IncludeRetElementList.Add("JobTypeRef");
+            customerQueryReq.IncludeRetElementList.Add("Notes");
+            customerQueryReq.IncludeRetElementList.Add("AdditionalNotesRetList");
+            customerQueryReq.IncludeRetElementList.Add("PreferredDeliveryMethod");
+            customerQueryReq.IncludeRetElementList.Add("PriceLevelRef");
+            customerQueryReq.IncludeRetElementList.Add("ExternalGUID");
+            customerQueryReq.IncludeRetElementList.Add("CurrencyRef");
+            customerQueryReq.IncludeRetElementList.Add("DataExtRetList");
 
-        ICustomerQuery SetCustomerQuery(ref IMsgSetRequest requestMsgSet, int MetaType, ref ICustomerQuery customerQueryReq)
+            return customerQueryReq;
+        }
+
+
+        ICustomerQuery SetCustomerQuery(int MetaType, ref ICustomerQuery customerQueryReq)
         {
 
 
@@ -76,7 +135,7 @@ namespace QuickBooksToLocalV1.QuickBooksDal
                     customerQueryReq.metaData.SetValue(ENmetaData.mdNoMetaData);
                     break;
             }
-                        
+
             switch (ActiveState)
             {
                 case 1:
@@ -93,16 +152,31 @@ namespace QuickBooksToLocalV1.QuickBooksDal
 
             // Check to see if IDList is not null
             // loop through list adding them to query
-            if(IDlist.Count > 0)
+            if (IDlist.Count > 0)
             {
-                for(int i = 0; i< IDlist.Count; i++)
+                for (int i = 0; i < IDlist.Count; i++)
                 {
                     customerQueryReq.ORCustomerListQuery.ListIDList.Add(IDlist[i]);
                 }
             }
 
-           
 
+            ////Fullname Search needs all Ancestors
+            ////Set field value for FullNameList
+            ////May create more than one of these if needed
+            //if (FullNameList.Count > 0)
+            //{
+            //    for (int i = 0; i < FullNameList.Count; i++)
+            //    {
+            //        customerQueryReq.ORCustomerListQuery.FullNameList.Add(FullNameList[i]);
+            //    }
+            //}
+
+            ////name filter search
+            //// match criteria
+            //// Name
+            //customerQueryReq.ORCustomerListQuery.CustomerListFilter.ORNameFilter.NameFilter.MatchCriterion.SetValue(ENMatchCriterion.mcStartsWith);
+            //customerQueryReq.ORCustomerListQuery.CustomerListFilter.ORNameFilter.NameFilter.Name.SetValue("");
 
 
             return customerQueryReq;
